@@ -26,7 +26,7 @@ const Register: NextPage = () => {
     async (data: IRegister) => {
       const result = await mutateAsync(data);
       if (result.status === 201) {
-        router.push("/");
+        router.push("/login");
       }
     },
     [mutateAsync, router]
